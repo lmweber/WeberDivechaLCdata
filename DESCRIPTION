@@ -12,8 +12,8 @@ Authors@R:
            email = "lukas.weber.edu@gmail.com", 
            role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0002-3282-1730"))
-URL: https://github.com/lmweber/LCdataLIBD
-BugReports: https://github.com/lmweber/LCdataLIBD/issues
+URL: https://github.com/lmweber/WeberDivechaLCdata
+BugReports: https://github.com/lmweber/WeberDivechaLCdata/issues
 License: MIT + file LICENSE
 biocViews:
     ExperimentData, 
