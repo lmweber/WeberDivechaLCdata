@@ -23,7 +23,19 @@ The package contains two objects:
 - 1x [SingleCellExperiment](https://bioconductor.org/packages/SingleCellExperiment) formatted R object containing the snRNA-seq data
 
 
-## Tutorial
+## Loading the data
 
-The data objects can be loaded as follows:
+The data objects can be loaded using the dataset names, as follows:
+
+```
+library(WeberDivechaLCdata)
+library(SpatialExperiment)
+library(SingleCellExperiment)
+
+# Load objects using dataset names
+spe <- WeberDivechaLCdata_Visium()
+sce <- WeberDivechaLCdata_singleNucleus()
+```
+
+More details on how to load the data and the data structure are provided in the package vignette.
 
