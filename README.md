@@ -37,5 +37,5 @@ spe <- WeberDivechaLCdata_Visium()
 sce <- WeberDivechaLCdata_singleNucleus()
 ```
 
-More details on how to load the data and the data structure are provided in the package vignette.
+More details on how to load the data and the data structure are provided in the package [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html).
 
