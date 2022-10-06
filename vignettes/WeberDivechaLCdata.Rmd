@@ -1,0 +1,142 @@
+---
+title: "WeberDivechaLCdata package"
+author: 
+  - name: Lukas M. Weber
+    affiliation: "Johns Hopkins Bloomberg School of Public Health, Baltimore, MD, USA"
+  - name: Heena R. Divecha
+    affiliation: "Lieber Institute for Brain Development, Baltimore, MD, USA"
+package: WeberDivechaLCdata
+output: 
+  BiocStyle::html_document
+vignette: >
+  %\VignetteIndexEntry{WeberDivechaLCdata package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introduction
+
+This package contains publicly accessible data from our paper on the gene expression landscape of the human locus coeruleus (LC).
+
+The dataset consists of spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from the LC in postmortem human brain samples. Data were generated with the 10x Genomics Visium SRT and 10x Genomics Chromium snRNA-seq platforms.
+
+The data are provided as `SpatialExperiment` and `SingleCellExperiment` R/Bioconductor objects in this package, and in online web apps (`Shiny` and `iSEE`) for interactive exploration (see links in paper).
+
+A preprint of the paper will be posted on bioRxiv.
+
+
+## Installation
+
+The package can be installed from [Bioconductor](https://bioconductor.org/packages/WeberDivechaLCdata) as follows:
+
+```{r, eval=FALSE}
+install.packages("BiocManager")
+BiocManager::install("WeberDivechaLCdata")
+```
+
+
+## Contents
+
+The package contains the following objects:
+
+- `WeberDivechaLCdata_Visium`: SRT (Visium) dataset
+- `WeberDivechaLCdata_singleNucleus`: snRNA-seq dataset
+
+
+# Loading the data
+
+The data objects can be loaded using the dataset names, as follows:
+
+```{r, message=FALSE}
+library(SpatialExperiment)
+library(SingleCellExperiment)
+```
+
+```{r, message=FALSE}
+# Load objects using dataset names
+spe <- WeberDivechaLCdata_Visium()
+sce <- WeberDivechaLCdata_singleNucleus()
+```
+
+
+Alternatively, the data objects can be loaded by accessing the ExperimentHub 
+IDs, as follows:
+
+```{r, message=FALSE}
+library(ExperimentHub)
+```
+
+```{r, message=FALSE}
+# create ExperimentHub instance
+eh <- ExperimentHub()
+
+# query datasets
+my_files <- query(eh, "WeberDivechaLCdata")
+my_files
+
+# metadata
+md <- as.data.frame(mcols(my_files))
+```
+
+```{r, message=FALSE}
+# load data using ExperimentHub query
+spe <- my_files[[1]]
+sce <- my_files[[2]]
+```
+
+```{r, message=FALSE}
+# load data using ExperimentHub IDs
+# spe <- myfiles[["EHXXXX"]]
+# sce <- myfiles[["EHYYYY"]]
+```
+
+
+## Show data
+
+Check that the data have been loaded:
+
+```{r, message=FALSE}
+# Visium data (SpatialExperiment format)
+spe
+
+# dimensions
+dim(spe)
+# assays
+assayNames(spe)
+# row data
+rowData(spe)
+# column data
+colData(spe)
+# spatial coordinates
+head(spatialCoords(spe))
+# image data
+imgData(spe)
+```
+
+
+```{r, message=FALSE}
+# snRNA-seq data (SingleCellExperiment format)
+sce
+
+# dimensions
+dim(sce)
+# assays
+assayNames(sce)
+# row data
+rowData(sce)
+# column data
+colData(sce)
+```
+
+
+# Session information
+
+```{r}
+sessionInfo()
+```
+
