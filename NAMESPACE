@@ -1,2 +1,4 @@
 importFrom(utils, read.csv)
+importFrom(SpatialExperiment, SpatialExperiment)
+importFrom(SingleCellExperiment, SingleCellExperiment)
 importFrom(ExperimentHub, createHubAccessors)
