@@ -24,6 +24,8 @@ biocViews:
     ExperimentHub, 
     ReproducibleResearch, 
     ExpressionData, 
+    SequencingData, 
+    RNASeqData, 
     SingleCellData, 
     SpatialData, 
     Homo_sapiens_Data
