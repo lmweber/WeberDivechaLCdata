@@ -55,6 +55,7 @@ The data objects can be loaded using the dataset names, as follows:
 ```{r, message=FALSE}
 library(SpatialExperiment)
 library(SingleCellExperiment)
+library(WeberDivechaLCdata)
 ```
 
 ```{r, message=FALSE}
