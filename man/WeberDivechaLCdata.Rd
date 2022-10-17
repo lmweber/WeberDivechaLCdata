@@ -39,10 +39,10 @@ IDs (see vignette).
 }
 \examples{
 # Load objects using dataset names
-# spe <- WeberDivechaLCdata_Visium()
-# sce <- WeberDivechaLCdata_singleNucleus()
-#
+spe <- WeberDivechaLCdata_Visium()
+sce <- WeberDivechaLCdata_singleNucleus()
+
 # Show objects
-# spe
-# sce
+spe
+sce
 }
