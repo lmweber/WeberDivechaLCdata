@@ -7,7 +7,7 @@ A preprint of the paper will be posted on bioRxiv.
 
 ## Installation
 
-The data package is available as an R package from [Bioconductor](https://bioconductor.org/packages/WeberDivechaLCdata) and can be installed as follows:
+The data package is available as an R package from [Bioconductor](https://bioconductor.org/packages/WeberDivechaLCdata) and can be installed as follows (available in the release version of Bioconductor from Nov 2, 2022, onwards):
 
 ```
 install.packages("BiocManager")
@@ -28,14 +28,18 @@ The package contains two objects:
 The data objects can be loaded using the dataset names, as follows:
 
 ```
-library(WeberDivechaLCdata)
 library(SpatialExperiment)
 library(SingleCellExperiment)
+library(WeberDivechaLCdata)
 
 # Load objects using dataset names
 spe <- WeberDivechaLCdata_Visium()
 sce <- WeberDivechaLCdata_singleNucleus()
+
+# Show objects
+spe
+sce
 ```
 
-More details on how to load the data and the data structure are provided in the package [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html).
+More details on how to load the data and the data structure are provided in the package [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html) (available in the release version of Bioconductor from Nov 2, 2022, onwards).
 
