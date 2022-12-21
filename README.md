@@ -2,14 +2,18 @@
 
 [![R build status](https://github.com/lmweber/WeberDivechaLCdata/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/lmweber/WeberDivechaLCdata/actions)
 
-This package contains publicly accessible datasets from our upcoming paper on spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from the human locus coeruleus (LC).
+This package contains data from our paper on the single-nucleus and spatially-resolved landscape of gene expression in the human locus coeruleus (LC).
 
-A preprint of the paper will be posted on bioRxiv.
+The package is available from Bioconductor ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)).
+
+Datasets are stored in R/Bioconductor formats ([SingleCellExperiment](https://bioconductor.org/packages/SingleCellExperiment) and [SpatialExperiment](https://bioconductor.org/packages/SpatialExperiment)).
+
+A preprint of the paper is available from [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.10.28.514241v1).
 
 
 ## Installation
 
-The data package is available as an R package from [Bioconductor](https://bioconductor.org/packages/WeberDivechaLCdata) and can be installed as follows (available in the release version of Bioconductor from Nov 2, 2022, onwards):
+The package is available from Bioconductor ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)) and can be installed as follows:
 
 ```
 install.packages("BiocManager")
@@ -27,7 +31,7 @@ The package contains two objects:
 
 ## Loading the data
 
-The data objects can be loaded using the dataset names, as follows:
+The R/Bioconductor data objects can be loaded using the dataset names:
 
 ```
 library(SpatialExperiment)
@@ -43,5 +47,10 @@ spe
 sce
 ```
 
-More details on how to load the data and the data structure are provided in the package [vignette](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html) (available in the release version of Bioconductor from Nov 2, 2022, onwards).
+More details on how to load the data and the data structure are provided in the package vignette, which can be found on the Bioconductor package landing page ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)) or directly [here](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html).
+
+
+## Citation
+
+- [Weber L.M.\*, Divecha H.R.\*, Tran M.N., Kwon S.H., Spangler A., Montgomery K.D., Tippani M., Bharadwaj R., Kleinman J.E., Page S.C., Hyde T.M., Collado-Torres L., Maynard K.R., Martinowich K.\*, and Hicks S.C.\* (2022). *The gene expression landscape of the human locus coeruleus revealed by single-nucleus and spatially-resolved transcriptomics.* bioRxiv (preprint).](https://www.biorxiv.org/content/10.1101/2022.10.28.514241v1)
 
