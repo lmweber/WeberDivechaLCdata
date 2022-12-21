@@ -1,5 +1,7 @@
 # WeberDivechaLCdata
 
+[![R build status](https://github.com/lmweber/WeberDivechaLCdata/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/lmweber/WeberDivechaLCdata/actions)
+
 This package contains publicly accessible datasets from our upcoming paper on spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from the human locus coeruleus (LC).
 
 A preprint of the paper will be posted on bioRxiv.
