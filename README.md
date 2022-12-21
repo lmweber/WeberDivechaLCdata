@@ -31,7 +31,7 @@ The package contains two objects:
 
 ## Loading the data
 
-The R/Bioconductor data objects can be loaded using the dataset names:
+The R/Bioconductor data objects can be loaded as follows:
 
 ```
 library(SpatialExperiment)
@@ -47,10 +47,10 @@ spe
 sce
 ```
 
-More details on how to load the data and the data structure are provided in the package vignette, which can be found on the Bioconductor package landing page ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)) or directly [here](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html).
+More details including alternative ways to load the data and details on the data structure are provided in the package vignette, which can be found on the Bioconductor package landing page ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)) or directly [here](https://bioconductor.org/packages/release/data/experiment/vignettes/WeberDivechaLCdata/inst/doc/WeberDivechaLCdata.html).
 
 
 ## Citation
 
-- [Weber L.M.\*, Divecha H.R.\*, Tran M.N., Kwon S.H., Spangler A., Montgomery K.D., Tippani M., Bharadwaj R., Kleinman J.E., Page S.C., Hyde T.M., Collado-Torres L., Maynard K.R., Martinowich K.\*, and Hicks S.C.\* (2022). *The gene expression landscape of the human locus coeruleus revealed by single-nucleus and spatially-resolved transcriptomics.* bioRxiv (preprint).](https://www.biorxiv.org/content/10.1101/2022.10.28.514241v1)
+- Weber L.M.\*, Divecha H.R.\*, Tran M.N., Kwon S.H., Spangler A., Montgomery K.D., Tippani M., Bharadwaj R., Kleinman J.E., Page S.C., Hyde T.M., Collado-Torres L., Maynard K.R., Martinowich K.\*, and Hicks S.C.\* (2022). *The gene expression landscape of the human locus coeruleus revealed by single-nucleus and spatially-resolved transcriptomics.* [bioRxiv (preprint).](https://www.biorxiv.org/content/10.1101/2022.10.28.514241v1)
 
