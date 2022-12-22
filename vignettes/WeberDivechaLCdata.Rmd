@@ -21,18 +21,18 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-This package contains publicly accessible data from our paper on the gene expression landscape of the human locus coeruleus (LC).
+This package contains data from our paper on the gene expression landscape of the human locus coeruleus (LC).
 
 The dataset consists of spatially-resolved transcriptomics (SRT) and single-nucleus RNA-sequencing (snRNA-seq) data from the LC in postmortem human brain samples. Data were generated with the 10x Genomics Visium SRT and 10x Genomics Chromium snRNA-seq platforms.
 
 The data are provided as `SpatialExperiment` and `SingleCellExperiment` R/Bioconductor objects in this package, and in online web apps (`Shiny` and `iSEE`) for interactive exploration (see links in paper).
 
-A preprint of the paper will be posted on bioRxiv.
+A preprint of the paper is available from [bioRxiv](https://www.biorxiv.org/content/10.1101/2022.10.28.514241v1).
 
 
 ## Installation
 
-The package can be installed from [Bioconductor](https://bioconductor.org/packages/WeberDivechaLCdata) as follows:
+The package can be installed from Bioconductor ([WeberDivechaLCdata](https://bioconductor.org/packages/WeberDivechaLCdata)) as follows:
 
 ```{r, eval=FALSE}
 install.packages("BiocManager")
@@ -50,7 +50,7 @@ The package contains the following objects:
 
 # Loading the data
 
-The data objects can be loaded using the dataset names, as follows:
+The data objects can be loaded using the dataset names as follows:
 
 ```{r, message=FALSE}
 library(SpatialExperiment)
@@ -66,7 +66,7 @@ sce <- WeberDivechaLCdata_singleNucleus()
 
 
 Alternatively, the data objects can be loaded by accessing the ExperimentHub 
-IDs, as follows:
+IDs:
 
 ```{r, message=FALSE}
 library(ExperimentHub)
