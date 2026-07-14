@@ -1,5 +1,5 @@
 Package: WeberDivechaLCdata
-Version: 1.14.0
+Version: 1.14.1
 Title: Spatially-resolved transcriptomics and single-nucleus RNA-sequencing 
     data from the locus coeruleus (LC) in postmortem human brain samples
 Description: Spatially-resolved transcriptomics (SRT) and single-nucleus 
@@ -9,7 +9,7 @@ Description: Spatially-resolved transcriptomics (SRT) and single-nucleus
     SpatialExperiment and SingleCellExperiment formats.
 Authors@R: c(
     person("Lukas M.", "Weber", 
-           email = "lmweb012@gmail.com", 
+           email = "weberlm3@gmail.com", 
            role = c("aut", "cre"), 
            comment = c(ORCID = "0000-0002-3282-1730")), 
     person("Heena R.", "Divecha", 
